@@ -5,7 +5,9 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body className="antialiased">
-        <Main />
+        <main className="p-[40px]">
+          <Main />
+        </main>
         <NextScript />
       </body>
     </Html>
