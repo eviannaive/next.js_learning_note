@@ -58,7 +58,7 @@ const Page = () => {
           );
         };
 
-        export default Page;`}</CodeArea>
+        export default Page`}</CodeArea>
         <Back />
       </div>
     </>
