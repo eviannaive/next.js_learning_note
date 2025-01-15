@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Next.js learning note QQQ</title>
+        <title>Next.js learning note</title>
       </Head>
       <Component {...pageProps} />
     </>
