@@ -18,7 +18,7 @@ export default function Home() {
       <div
         className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]`}
       >
-        <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <div className="p-4 flex flex-col gap-8 row-start-2 items-center sm:items-start border-l-4 border-orange-300">
           <Image
             className="dark:invert"
             src="/next.svg"
@@ -28,37 +28,28 @@ export default function Home() {
             priority
           />
           <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-            <li className="mb-2">
-              Get started by editing{" "}
-              <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-                src/pages/index.tsx
-              </code>
-              .
-            </li>
-            <li>Save and see your changes instantly.</li>
+            <li className="mb-2">This project uses Next.js page router</li>
+            <li>Test zone and Eazy note</li>
           </ol>
-
-          <div className="flex gap-4 items-center flex-col sm:flex-row">
-            <Button label="SWR With Suspense" path="/swrWithSuspense" />
-            <Button label="Formik" path="/formik" />
+          <div>
+            <div className="text-lg">Concept:</div>
+            <div className="grid grid-cols-1 gap-4 items-center flex-col sm:flex-row mt-2">
+              <Button label="High-Order Component" path="/highOrderComponent" />
+            </div>
+          </div>
+          <div className="w-full h-[2px] bg-slate-200"></div>
+          <div>
+            <div className="text-lg">Package:</div>
+            <div className="grid grid-cols-1 gap-4 items-center flex-col sm:flex-row mt-2">
+              <Button label="SWR With Suspense" path="/swrWithSuspense" />
+              <Button label="High-Order Component" path="/highOrderComponent" />
+              <Button label="Formik" path="/formik" />
+            </div>
           </div>
         </div>
-        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/file.svg"
-              alt="File icon"
-              width={16}
-              height={16}
-            />
-            Learn
-          </a>
+      </div>
+      <footer>
+        <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
           <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
@@ -89,8 +80,8 @@ export default function Home() {
             />
             Go to nextjs.org →
           </a>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </>
   );
 }
