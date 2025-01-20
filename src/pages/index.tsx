@@ -42,7 +42,6 @@ export default function Home() {
             <div className="text-lg">Package:</div>
             <div className="grid grid-cols-1 gap-4 items-center flex-col sm:flex-row mt-2">
               <Button label="SWR With Suspense" path="/swrWithSuspense" />
-              <Button label="High-Order Component" path="/highOrderComponent" />
               <Button label="Formik" path="/formik" />
             </div>
           </div>
