@@ -44,6 +44,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-4 items-center flex-col sm:flex-row mt-2">
               <Button label="SWR With Suspense" path="/swrWithSuspense" />
               <Button label="Formik" path="/formik" />
+              <Button label="Material UI" path="/mui" />
             </div>
           </div>
         </div>
