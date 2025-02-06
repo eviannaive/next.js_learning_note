@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Button from "@/components/Button";
+import logo from "/logo.png";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,10 +22,10 @@ export default function Home() {
         <div className="p-4 flex flex-col gap-8 row-start-2 items-center sm:items-start border-l-4 border-orange-300">
           <Image
             className="dark:invert"
-            src="/logo.png"
-            alt="Next.js logo"
-            width={180}
-            height={38}
+            src={logo}
+            alt="Next.js Learning Note"
+            width={200}
+            height={200}
             priority
           />
           <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
