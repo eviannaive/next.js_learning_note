@@ -1,4 +1,4 @@
-import { Formik, ErrorMessage } from "formik";
+import { Formik, ErrorMessage, Field } from "formik";
 import PageLayout from "@/components/PageLayout";
 import { ReactElement } from "react";
 import { useState } from "react";
@@ -7,11 +7,13 @@ import * as Yup from "yup";
 const initialValues = {
   name: "",
   email: "",
+  private: false,
 };
 
 const userSchema = Yup.object().shape({
   name: Yup.string().min(2, "Too Short!").required("Required!"),
   email: Yup.string().email("Invalid email").required("Required!"),
+  gender: Yup.string().required("Required!"),
 });
 
 export default function Page() {
@@ -23,8 +25,8 @@ export default function Page() {
       .catch((error) => {
         console.log(error.inner, "inner");
         const errors = error.inner.reduce(
-          (acc, curr) => {
-            acc[curr.path] = curr.message;
+          (acc: Record<string, string>, crr: Record<string, string>) => {
+            acc[crr.path] = crr.message;
             return acc;
           },
           {} as Record<string, string>,
@@ -69,14 +71,15 @@ export default function Page() {
               >
                 <label className="flex">
                   <div className="mr-4 w-20">Name:</div>
-                  <input
+                  <Field name="name" />
+                  {/* <input
                     type="text"
                     name="name"
                     className="border"
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.name}
-                  />
+                  /> */}
                   {error.name && (
                     <div className="ml-2 text-red-600">{error.name}</div>
                   )}
@@ -95,7 +98,35 @@ export default function Page() {
                     <div className="ml-2 text-red-600">{error.email}</div>
                   )}
                 </label>
-                <button type="submit" disabled={isSubmitting}>
+                <div className="flex">
+                  <div className="mr-4 w-20">Gender:</div>
+                  <div
+                    role="group"
+                    aria-labelledby="my-radio-group"
+                    className="flex gap-4"
+                  >
+                    <label>
+                      <Field type="radio" name="gender" value="One" />
+                      One
+                    </label>
+                    <label>
+                      <Field type="radio" name="gender" value="Two" />
+                      Two
+                    </label>
+                  </div>
+                  {error.gender && (
+                    <div className="ml-2 text-red-600">{error.gender}</div>
+                  )}
+                </div>
+                <label>
+                  <Field type="checkbox" name="private" />
+                  {`${values.private}`}
+                </label>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="border p-1 rounded-2xl mt-2"
+                >
                   Submit
                 </button>
               </form>

@@ -2,6 +2,7 @@ import PageLayout from "@/components/PageLayout";
 import { ReactElement } from "react";
 import { useState } from "react";
 import CodeArea from "@/components/CodeArea";
+import { CopyBlock, dracula } from "react-code-blocks";
 
 // 高階組件定義
 const WithBottonCounter = <P extends object>(
@@ -72,7 +73,6 @@ export default function Page() {
       <h2 className="font-bold text-3xl px-2">
         [High-Order Component 高階組件]
       </h2>
-
       <div className="mt-4">
         <p>HOC 是一個函數，它接受一個組件作為輸入，並返回一個新的增強版組件</p>
         <p>
@@ -83,11 +83,11 @@ export default function Page() {
           extend props 的寫法，很像 slot 的用法，並且可以自訂 displayName：
         </p>
         <EnhancedCounter />
+
         <CodeArea>
           {`
             const WithBottonCounter = <P extends object>(
-              WrapComponent: React.ComponentType<P & { num: number }>,
-            ) => {
+              WrapComponent: React.ComponentType<P & { num: number }>) => {
               const EnhancedComponent = (props: P) => {
                 const [count, setCount] = useState(0);
                 const handleMinus = () => {
@@ -170,14 +170,15 @@ export default function Page() {
         </CodeArea>
         <br />
         <p>使用時</p>
-        <CodeArea>{`<WithBottonCounter2>
-          {({ num }: { num: number }) => {
-            return (
-              <div className="bg-rose-200 w-8 h-8 grid place-content-center">
-                {num}
-              </div>
-            );
-          }}
+        <CodeArea>{`
+          <WithBottonCounter2>
+            {({ num }: { num: number }) => {
+              return (
+                <div className="bg-rose-200 w-8 h-8 grid place-content-center">
+                  {num}
+                </div>
+              );
+            }}
         </WithBottonCounter2>`}</CodeArea>
       </div>
     </>

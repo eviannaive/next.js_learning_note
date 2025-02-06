@@ -21,7 +21,7 @@ export default function Home() {
         <div className="p-4 flex flex-col gap-8 row-start-2 items-center sm:items-start border-l-4 border-orange-300">
           <Image
             className="dark:invert"
-            src="/next.svg"
+            src="/logo.png"
             alt="Next.js logo"
             width={180}
             height={38}

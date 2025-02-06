@@ -1,10 +1,16 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
+import { CopyBlock, dracula } from "react-code-blocks";
 
 const CodeArea = ({ children }: { children: string }) => {
   return (
-    <SyntaxHighlighter className="mt-4" language="javascript">
-      {children}
-    </SyntaxHighlighter>
+    <div className="py-4">
+      <CopyBlock
+        language="javascript"
+        theme={dracula}
+        text={children}
+        showLineNumbers
+        codeBlock
+      ></CopyBlock>
+    </div>
   );
 };
 
