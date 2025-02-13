@@ -19,3 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.short-code {
+  @apply bg-gray-200 px-1 rounded-md text-gray-600;
+}
+
+.demo-button {
+  @apply transition border p-2 px-4 rounded-3xl hover:bg-gray-500 hover:text-white;
+}
