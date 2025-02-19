@@ -46,6 +46,7 @@ export default function Home() {
               <Button label="SWR With Suspense" path="/swrWithSuspense" />
               <Button label="Formik" path="/formik" />
               <Button label="Material UI" path="/mui" />
+              <Button label="Rive" path="/rive" />
             </div>
           </div>
         </div>
