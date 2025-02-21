@@ -37,6 +37,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-4 items-center flex-col sm:flex-row mt-2">
               <Button label="High-Order Component" path="/highOrderComponent" />
               <Button label="Proxy Server" path="/proxyServer" />
+              <Button label="Nginx" path="/nginx" />
             </div>
           </div>
           <div className="w-full h-[2px] bg-slate-200"></div>

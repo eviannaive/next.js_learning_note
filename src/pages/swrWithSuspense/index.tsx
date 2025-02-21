@@ -3,14 +3,14 @@ import Back from "@/components/Back";
 import CodeArea from "@/components/CodeArea";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
-const url = "https://api.sinsin.tw/api/home";
+const url = "http://localhost/api";
 
 const Loading = () => {
   return <div>loading...</div>;
 };
 
 const Description = () => {
-  const { data } = useSWR(url, fetcher, {
+  const { data } = useSWR(url + "/home", fetcher, {
     suspense: true,
     fallbackData: {
       data: { site_description: <Loading /> }, // 提供初始資料
