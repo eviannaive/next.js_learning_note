@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.4.0...v1.5.0) (2025-03-01)
+
+
+### Features
+
+* 自動化佈版測試 v1.4.0 ([1104f1a](https://github.com/eviannaive/next.js_learning_note/commit/1104f1ad73b6c95740fe27c34a78547fcae17ec8))
+
 # [1.4.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.3.0...v1.4.0) (2025-03-01)
 
 
