@@ -1,3 +1,17 @@
+# [1.4.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.3.0...v1.4.0) (2025-03-01)
+
+
+### Features
+
+* test test ([b6949c2](https://github.com/eviannaive/next.js_learning_note/commit/b6949c24439dd6452dd7344b34e2e7647beaa903))
+
+# [1.3.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.2.0...v1.3.0) (2025-03-01)
+
+
+### Features
+
+* test ([aa51768](https://github.com/eviannaive/next.js_learning_note/commit/aa517689dcb5f18ade87cb34e5d04cd0275a8c5e))
+
 # [1.2.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.1.0...v1.2.0) (2025-03-01)
 
 
