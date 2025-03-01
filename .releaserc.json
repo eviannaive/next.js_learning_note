@@ -16,22 +16,9 @@
       }
     ],
     [
-      "semantic-release-multi-lang",
-      {
-        "composerFile": "./composer.json",
-        "csprojFiles": ["./ProjectA.csproj", "./ProjectB.csproj"],
-        "versionFile": "./VERSION"
-      }
-    ],
-    [
       "@semantic-release/git",
       {
-        "assets": [
-          "package.json",
-          "CHANGELOG.md",
-          "composer.json",
-          "*/*.csproj"
-        ],
+        "assets": ["package.json", "CHANGELOG.md"],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
