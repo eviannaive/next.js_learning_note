@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.4.0...v1.5.0) (2025-03-01)
+
+
+### Bug Fixes
+
+* test ([9131997](https://github.com/eviannaive/next.js_learning_note/commit/9131997d971d9c765d53bbd98269da46f2b1cb9f))
+
+
+### Features
+
+* 測試package.json version是否更新 ([0df3fe0](https://github.com/eviannaive/next.js_learning_note/commit/0df3fe09c8e8b967e883d7d07e1c363f5d5f0987))
+
 # [1.4.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.3.0...v1.4.0) (2025-03-01)
 
 
