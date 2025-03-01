@@ -1,6 +1,7 @@
 {
   "name": "p_swr",
   "version": "1.0.1",
+  "node-version": "20.18.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
