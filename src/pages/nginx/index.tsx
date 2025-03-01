@@ -24,7 +24,7 @@ const Page = () => {
     <>
       <h2 className="font-bold text-3xl px-2">[Nginx]</h2>
       <div className="mt-4">
-        <p>使用nginx搭配docker在開發模式處理CORS的問題。</p>
+        <p>使用nginx搭配docker在開發模式處理CORS的問題</p>
         <div className="bg-amber-400/20 mt-5 p-4">
           <Description />
         </div>
