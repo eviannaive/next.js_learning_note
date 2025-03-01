@@ -10,6 +10,20 @@
 ### Features
 
 * 測試package.json version是否更新 ([0df3fe0](https://github.com/eviannaive/next.js_learning_note/commit/0df3fe09c8e8b967e883d7d07e1c363f5d5f0987))
+* 自動化測試 ([852afb5](https://github.com/eviannaive/next.js_learning_note/commit/852afb576fc2e379c172d137c3773f56f1ac4a28))
+
+# [1.5.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.4.0...v1.5.0) (2025-03-01)
+
+
+### Bug Fixes
+
+* test ([9131997](https://github.com/eviannaive/next.js_learning_note/commit/9131997d971d9c765d53bbd98269da46f2b1cb9f))
+* 版本號測試 ([d90a77c](https://github.com/eviannaive/next.js_learning_note/commit/d90a77cbf6ba1295d3e827f5736690f60b524c08))
+
+
+### Features
+
+* 測試package.json version是否更新 ([0df3fe0](https://github.com/eviannaive/next.js_learning_note/commit/0df3fe09c8e8b967e883d7d07e1c363f5d5f0987))
 
 # [1.5.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.4.0...v1.5.0) (2025-03-01)
 
