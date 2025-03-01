@@ -1,0 +1,34 @@
+{
+  "branches": ["main", "develop"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+    [
+      "semantic-release-multi-lang",
+      {
+        "composerFile": "./composer.json",
+        "csprojFiles": ["./ProjectA.csproj", "./ProjectB.csproj"],
+        "versionFile": "./VERSION"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md", "composer.json", "*/*.csproj"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}
