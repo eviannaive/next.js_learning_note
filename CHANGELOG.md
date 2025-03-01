@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/eviannaive/next.js_learning_note/compare/v1.5.0...v1.5.1) (2025-03-01)
+
+
+### Bug Fixes
+
+* trigger release ([a58a782](https://github.com/eviannaive/next.js_learning_note/commit/a58a782752d257cd1836880ad63a53e9c9a13ca5))
+
 # [1.5.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.4.0...v1.5.0) (2025-03-01)
 
 
