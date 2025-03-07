@@ -39,11 +39,7 @@ export default function Page() {
     <>
       <h2 className="font-bold text-3xl px-2">[Formik]</h2>
       <div className="mt-4">
-        <a
-          className="text-orange-600 underline underline-offset-1"
-          href="https://formik.org/"
-          target="_blank"
-        >
+        <a className="link" href="https://formik.org/" target="_blank">
           https://formik.org/
         </a>
         <Formik

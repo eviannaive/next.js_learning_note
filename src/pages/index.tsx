@@ -19,7 +19,7 @@ export default function Home() {
       <div
         className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]`}
       >
-        <div className="p-4 flex flex-col gap-8 row-start-2 items-center sm:items-start border-l-4 border-orange-300">
+        <div className="w-full p-4 flex flex-col gap-8 row-start-2 items-center sm:items-start border-l-4 border-orange-300">
           <Image
             className="dark:invert"
             src={logo}
@@ -28,26 +28,36 @@ export default function Home() {
             height={200}
             priority
           />
-          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-            <li className="mb-2">This project uses Next.js page router</li>
-            <li>Test zone and Eazy note</li>
-          </ol>
-          <div>
+          <div className="font-[family-name:var(--font-geist-mono)] text-sm">
+            <ol className="list-outside list-decimal  text-left pl-8">
+              <li className="mb-2">This project uses Next.js page router</li>
+              <li className="mb-2">
+                Here are <b>Test zone</b> and <b>Eazy note</b>
+              </li>
+              <li className="mb-2">
+                The blog is under construction and will be moved there later
+              </li>
+              <li className="mb-2">The content will be more comprehensive</li>
+            </ol>
+            <div className="mb-2 text-right">By Eloise</div>
+          </div>
+          <div className="w-full">
             <div className="text-lg">Concept:</div>
-            <div className="grid grid-cols-1 gap-4 items-center flex-col sm:flex-row mt-2">
+            <div className="w-full grid grid-cols-[repeat(auto-fill,250px)] gap-4 items-center sm:flex-row mt-2">
               <Button label="High-Order Component" path="/highOrderComponent" />
               <Button label="Proxy Server" path="/proxyServer" />
               <Button label="Nginx" path="/nginx" />
             </div>
           </div>
           <div className="w-full h-[2px] bg-slate-200"></div>
-          <div>
+          <div className="w-full">
             <div className="text-lg">Package:</div>
-            <div className="grid grid-cols-1 gap-4 items-center flex-col sm:flex-row mt-2">
+            <div className="w-full grid grid-cols-[repeat(auto-fill,250px)] gap-4 items-center sm:flex-row mt-2">
               <Button label="SWR With Suspense" path="/swrWithSuspense" />
               <Button label="Formik" path="/formik" />
               <Button label="Material UI" path="/mui" />
               <Button label="Rive" path="/rive" />
+              <Button label="React Markdown" path="/reackmarkdown" />
             </div>
           </div>
         </div>
