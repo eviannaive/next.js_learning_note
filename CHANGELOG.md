@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.5.2...v1.6.0) (2025-03-07)
+
+
+### Features
+
+* add react markdown ([4dfe495](https://github.com/eviannaive/next.js_learning_note/commit/4dfe495d535a66f02e48e1eaf42776e797003063))
+
 ## [1.5.2](https://github.com/eviannaive/next.js_learning_note/compare/v1.5.1...v1.5.2) (2025-03-01)
 
 
