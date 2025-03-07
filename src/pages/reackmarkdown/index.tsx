@@ -1,5 +1,4 @@
 import Back from "@/components/Back";
-import CodeArea from "@/components/CodeArea";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
