@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.6.0...v1.7.0) (2025-03-07)
+
+
+### Features
+
+* release test ([fe1749c](https://github.com/eviannaive/next.js_learning_note/commit/fe1749c044316a0d23ea2043b12a8a8f6b9e4cee))
+
 # [1.6.0](https://github.com/eviannaive/next.js_learning_note/compare/v1.5.2...v1.6.0) (2025-03-07)
 
 
